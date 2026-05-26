@@ -18,6 +18,9 @@ if(POLICY CMP0167)
 endif()
 
 find_package(Boost COMPONENTS program_options REQUIRED)
+find_package(fmt REQUIRED)
+
+link_libraries(fmt::fmt)
 
 include_directories(
   /usr/local/include/ddscxx
